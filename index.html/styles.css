@@ -158,12 +158,3 @@ footer ul li a:hover {
     nav ul li {
         margin: 8px 0;
     }
-
-    h2 {
-        font-size: 1.4em;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-}
