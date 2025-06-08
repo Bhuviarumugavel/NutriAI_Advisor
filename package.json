@@ -1,0 +1,23 @@
+{
+  "name": "bhuan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhuviarumugavel/NutriAI_Advisor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bhuviarumugavel/NutriAI_Advisor/issues"
+  },
+  "homepage": "https://github.com/Bhuviarumugavel/NutriAI_Advisor#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
