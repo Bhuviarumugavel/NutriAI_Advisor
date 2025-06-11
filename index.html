@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriAI Advisor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NutriAI Advisor</h1>
+        <p>Your guide to a healthier lifestyle</p>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Welcome to NutriAI Advisor</h2>
+            <p>We provide personalized nutrition advice to help you achieve your wellness goals.</p>
+            <a href="#learn-more" class="btn">Learn More</a>
+        </section>
+        <section class="nutrition-data">
+            <h2>Nutritional Information</h2>
+            <ul id="food-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 NutriAI Advisor. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch("data.json")
+            .then(response => response.json())
+            .then(data => {
+                const foodList = document.getElementById("food-list");
+                data.foods.forEach(food => {
+                    const li = document.createElement("li");
+                    li.textContent = `${food.name}: ${food.calories} calories, ${food.protein}g protein, ${food.carbs}g carbs, ${food.fat}g fat`;
+                    foodList.appendChild(li);
+                });
+            })
+            .catch(error => console.error("Error loading data:", error));
+    </script>
+</body>
+</html>
